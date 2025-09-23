@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
-async function registerUser(req, rees){
+async function registerUser(req, res){
     const { fullName, email, password } = req.body;
 
     const isUserAlreadyExists = await userModel.findOne(({
@@ -44,7 +44,6 @@ async function registerUser(req, rees){
 }
 
 async function loginUser(req, res){
-
 }
 
 module.exports = {
