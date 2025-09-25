@@ -4,6 +4,6 @@ const foodController = require('../controllers/food.controller')
 const authMiddleware = require('../middlewares/auth.middleware')
 
 /* POST /api/food */
-router.post('/', authMiddleware.authFoodPartnerMiddleware, foodController)
+router.post('/', authMiddleware.authFoodPartnerMiddleware, foodController.createFood)
 
 module.exports = router;
