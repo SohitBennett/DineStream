@@ -6,7 +6,7 @@ async function createFood(req, res) {
 
     res.send("food items createed")
 
-    // res.send("food item created")
+    
 }
 
 module.exports = {
